@@ -1,3 +1,3 @@
-# Just call it "indonesian" version
+# "indonesian" version 
 
 Thanks.
