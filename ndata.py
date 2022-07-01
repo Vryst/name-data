@@ -72,8 +72,8 @@ elif hari_lahir == "Sunday":
 
 umur = hari_ini - tanggal_lahir
 umur1 = umur // 365
-
-print(f"{bold}Umur anda adalah = {green}{umur1.days} tahun{end}")
+umurb = (umur.days % 365) // 30
+print(f"{bold}Umur anda adalah = {green}{umur1.days} tahun {umurb} bulan{end}")
 
 print(f"""\n\n{bold}Terimakasih {green}{nama}{end} {bold}telah berkunjung{end}
 
