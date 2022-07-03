@@ -55,7 +55,7 @@ age1 = age // 365
 age_m = (age.days % 365) // 30
 print(f"{bold}Your age is = {green}{age1.days} year and {age_m} months {end}")
 
-print(f"""\n\n{bold}Thank you {green}{nama}'s{end} {bold}for using this program{end}
+print(f"""\n\n{bold}Thank you {green}{name}'s{end} {bold}for using this program{end}
 
 {bold}{blue}{underline}{sp1}/End of the program\{sp1}{end}
 """)
