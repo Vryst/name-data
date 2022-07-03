@@ -18,64 +18,44 @@ sp1 = 15*"—"
 
 
 
-nama = input(bold + "Masukan nama anda = " + bold + bg + end)
+name = input(bold + "Enter your name = " + bold + bg + end)
 
 print(f"{bold}{blue}{arr2}\n{arl2}{end}")
 
-print(f"""\n\n{bold}Silahkan masukan tanggal lahir,
-Bulan,
-Dan tahun lahir anda.{end}
+print(f"""\n\n{bold}Please enter your date,
+Month,
+And year of birth.{end}
 """)
 
 print(f"{bold}{blue}{arr2}\n{arl2}{end}")
 
 
-tanggal = int(input(bold + "\n\nTanggal = " + end))
-bulan = int(input(bold + "Bulan \t= " + end))
-tahun = int(input(bold + "Tahun \t= " + end))
+date = int(input(bold + "\n\nDate = " + end))
+month = int(input(bold + "Month \t= " + end))
+year = int(input(bold + "Year \t= " + end))
 
-hari_ini = dt.date.today()
+today = dt.date.today()
 print(21*"—")
 
-print(f"{bold}Hari ini = {bg}{hari_ini}{end}")
+print(f"{bold}Current date is = {bg}{today}{end}")
 
 print(21*"—")
 
 
-tanggal_lahir = dt.date(tahun,bulan,tanggal)
+date_of_birth = dt.date(year,month,date)
 
-print(f"\n{bold}Tanggal lahirnya adalah = {green}{tanggal_lahir}{end}")
+print(f"\n{bold}Your date of birth is = {green}{date_of_birth}{end}")
 
-hari_lahir = f"{tanggal_lahir:%A}"
+day_of_birth = f"{date_of_birth:%A}"
 
-if hari_lahir == "Monday":
-    print(f"{bold}Hari lahirnya adalah = {green}Senin{end}")
-    
-elif hari_lahir == "Tuesday":
-    print(f"{bold}Hari lahirnya adalah = {green}Selasa{end}")
-    
-elif hari_lahir == "Wednesday":
-    print(f"{bold}Hari lahirnya adalah = {green}Rabu{end}")
-    
-elif hari_lahir == "Thursday":
-    print(f"{bold}Hari lahirnya adalah = {green}Kamis{end}")
-    
-elif hari_lahir == "Friday":
-    print(f"{bold}Hari lahirnya adalah = {green}Jum'at{end}")
-    
-elif hari_lahir == "Saturday":
-    print(f"{bold}Hari lahirnya adalah = {green}Sabtu{end}")
-    
-elif hari_lahir == "Sunday":
-    print(f"{bold}Hari lahirnya adalah = {green}Minggu{end}")
-    
+print(f"Your birthday is = {day_of_birth}")
 
-umur = hari_ini - tanggal_lahir
-umur1 = umur // 365
-umurb = (umur.days % 365) // 30
-print(f"{bold}Umur anda adalah = {green}{umur1.days} tahun {umurb} bulan{end}")
+age = today - date_of_birth
+age1 = age // 365
+age_m = (age.days % 365) // 30
+print(f"{bold}Your age is = {green}{age1.days} year and {age_m} months {end}")
 
-print(f"""\n\n{bold}Terimakasih {green}{nama}{end} {bold}telah berkunjung{end}
+print(f"""\n\n{bold}Thank you {green}{nama}'s{end} {bold}for using this program{end}
 
-{bold}{blue}{underline}{sp1}/Akhir dari program\{sp1}{end}
+{bold}{blue}{underline}{sp1}/End of the program\{sp1}{end}
 """)
